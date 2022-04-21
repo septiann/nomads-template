@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="assets/libraries/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="container container-mobile">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <a href="/#" class="navbar-brand ms-lg-3">
+                <img src="assets/images/logo.png" alt="Logo Nomads">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#list-menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="list-menu">
+                <ul class="navbar-nav ml-auto mr-3">
+                    <li class="nav-item mx-md-2">
+                        <a href="/#" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item mx-md-2">
+                        <a href="/#" class="nav-link">Paket Travel</a>
+                    </li>
+                    <li class="nav-item mx-md-2 dropdown">
+                        <a href="/#" class="nav-link dropdown-toggle" id="navbar-drop" data-bs-toggle="dropdown">
+                            Services&nbsp;
+                            <img src="assets/images/ic_dropdown.svg" alt="">
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/#" class="dropdown-item">Link 1</a></li>
+                            <li><a href="/#" class="dropdown-item">Link 2</a></li>
+                            <li><a href="/#" class="dropdown-item">Link 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mx-md-2">
+                        <a href="/#" class="nav-link">Testimonial</a>
+                    </li>
+                </ul>
+
+                <!-- Mobile Login Button -->
+                <form class="form-inline d-sm-block d-md-none">
+                    <button class="btn btn-login my-2 my-sm-0">
+                        Masuk
+                    </button>
+                </form>
+
+                <!-- Desktop Login Button  -->
+                <form class="form-inline my-2 my-lg-0 d-none d-md-block">
+                    <button class="btn btn-login btn-navbar-right my-2 my-sm-0 px-4">
+                        Masuk
+                    </button>
+                </form>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Header -->
+    <header class="text-center">
+        <h1>Explore The Beautiful World<br>As Easy One Click</h1>
+        <p>You will see beautiful<br>moment you never see before</p>
+        <a href="/#" class="btn btn-started px-4">Get Started</a>
+    </header>
+
+    <script src="assets/libraries/jquery/jquery-3.6.0.min.js"></script>
+    <script src="assets/libraries/bootstrap/js/bootstrap.js"></script>
+    <script src="assets/libraries/retinajs/retina.min.js"></script>
+</body>
+</html>
