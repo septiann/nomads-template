@@ -3,15 +3,18 @@ $secondaryFont: 'Playfair Display', serif;
 $primaryFontLight: 300;
 $primaryFontRegular: 400;
 $primaryFontSemiBold: 600;
+$primaryFontBold: 700;
 
 $primaryColor: #071C4D;
 $white: #FFFFFF;
+$black: #000000;
 $orange: #FF9E53;
+$grey: #6E6E6E;
+$softGrey: #F2F2F2;
 
 body {
     font-family: $primaryFont;
     color: $primaryColor;
-    background: #E4E6EB;
 }
 
 // Navbar
@@ -107,6 +110,224 @@ header {
     }
 }
 
+// Section Stats
+.section-stats {
+    height: 100px;
+    margin-top: -50px;
+
+    .stats-detail {
+        background-color: $white;
+        padding-left: 54px;
+
+        h2 {
+            font-size: 30px;
+            font-weight: $primaryFontSemiBold;
+        }
+
+        span {
+            font-size: 20px;
+            font-weight: $primaryFontLight;
+        }
+    }
+}
+
+// Section Popular
+.section-popular {
+    background-color: #051334;
+    min-height: 540px;
+    margin-top: -50px;
+
+    .section-popular-heading {
+        margin-top: 150px;
+
+        h2 {
+            font-family: $secondaryFont;
+            font-size: 40px;
+            color: $white;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: $primaryFontRegular;
+            color: $white;
+            line-height: 23px;
+        }
+    }
+}
+
+.section-popular-content {
+    margin-top: -210px;
+    
+    .section-popular-travel {
+        .card-travel {
+            min-height: 380px;
+            color: $white;
+            padding: 30px;
+            background-size: cover;
+            margin-bottom: 20px;
+
+            .travel-country {
+                font-size: 18px;
+                font-weight: $primaryFontRegular;
+            }
+
+            .travel-location {
+                font-size: 26px;
+                font-weight: $primaryFontSemiBold;
+            }
+
+            .travel-button {
+                .btn-travel-details {
+                    background-color: $orange;
+                    color: $white;
+
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Section Networks
+.section-networks {
+    margin-top: -170px;
+    padding-top: 240px;
+    padding-bottom: 50px;
+
+    h2 {
+        font-family: $secondaryFont;
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: $primaryFontRegular;
+        line-height: 23px;
+        margin-top: 14px;
+    }
+
+    .img-partners {
+        max-width: 100%;
+        margin: 0 8px;
+    }
+}
+
+// Section Testimonial
+.section-testimonial-heading {
+    padding-top: 50px;
+    background: linear-gradient(#fff 0%, #f7f9ff 100%);
+    min-height: 506px;
+
+    h2 {
+        font-family: $secondaryFont;
+        font-size: 40px;
+    }
+
+    p {
+        font-weight: $primaryFontRegular;
+        font-size: 18px;
+        line-height: 23px;
+        margin-top: 14px;
+    }
+}
+
+.section-testimonial-content {
+    margin-top: -300px;
+    padding-bottom: 50px;
+
+    .card-testimonial {
+        padding: 40px 20px 10px;
+        border-radius: 11px;
+
+        .testimonial-content {
+            min-height: 380px;
+
+            img {
+                max-width: 120px;
+                max-height: 120px;
+            }
+
+            h3 {
+                font-weight: $primaryFontSemiBold;
+                font-size: 22px;
+            }
+
+            .testimonial {
+                font-weight: $primaryFontLight;
+                font-size: 26px;
+                color: $grey;
+                min-height: 180px;
+            }
+
+            .trip-to {
+                font-weight: $primaryFontRegular;
+                font-size: 22px;
+                color: $grey;
+            }
+
+            hr {
+                margin-left: -20px;
+                margin-right: -20px;
+            }
+        }
+    }
+
+    .btn-help {
+        min-width: 170px;
+        background-color: $softGrey;
+        border: 1px solid $softGrey;
+        color: $grey;
+        font-size: 20px;
+        font-weight: $primaryFontLight;
+
+        &:hover {
+            background-color: $softGrey;
+            border: 1px solid $grey;
+        }
+    }
+
+    .btn-started {
+        min-width: 170px;
+        background-color: $orange;
+        border: 1px solid $orange;
+        color: $white;
+        font-size: 20px;
+        font-weight: $primaryFontSemiBold;
+
+        &:hover {
+            background-color: unset;
+            color: $orange;
+        }
+    }
+}
+
+// Section Footer
+.section-footer {
+    h5 {
+        font-size: 22px;
+        font-weight: $primaryFontSemiBold;
+    }
+
+    a {
+        font-size: 18px;
+        font-weight: $primaryFontRegular;
+        color: $primaryColor;
+        text-decoration: none;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    .footer-text {
+        color: $grey;
+        font-size: 18px;
+        font-weight: $primaryFontLight;
+    }
+}
+
 // Responsive Max Width 768
 @media screen and (max-width: 768px) {
     .container-mobile {
@@ -118,6 +339,20 @@ header {
             padding-right: 10px;
             padding-top: unset;
             padding-bottom: unset;
+        }
+    }
+
+    .section-stats {
+        .stats-detail {
+            padding-left: 20px;
+
+            h2 {
+                font-size: 20px;
+            }
+    
+            span {
+                font-size: 10px;
+            }
         }
     }
 }

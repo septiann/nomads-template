@@ -1,7 +1,6 @@
 body {
   font-family: "Assistant", sans-serif;
   color: #071C4D;
-  background: #E4E6EB;
 }
 
 .navbar {
@@ -91,6 +90,214 @@ header .btn-started:hover {
   border: 2px solid #FF9E53;
 }
 
+.section-stats {
+  height: 100px;
+  margin-top: -50px;
+}
+
+.section-stats .stats-detail {
+  background-color: #FFFFFF;
+  padding-left: 54px;
+}
+
+.section-stats .stats-detail h2 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.section-stats .stats-detail span {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.section-popular {
+  background-color: #051334;
+  min-height: 540px;
+  margin-top: -50px;
+}
+
+.section-popular .section-popular-heading {
+  margin-top: 150px;
+}
+
+.section-popular .section-popular-heading h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  color: #FFFFFF;
+}
+
+.section-popular .section-popular-heading p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 23px;
+}
+
+.section-popular-content {
+  margin-top: -210px;
+}
+
+.section-popular-content .section-popular-travel .card-travel {
+  min-height: 380px;
+  color: #FFFFFF;
+  padding: 30px;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+
+.section-popular-content .section-popular-travel .card-travel .travel-country {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.section-popular-content .section-popular-travel .card-travel .travel-location {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.section-popular-content .section-popular-travel .card-travel .travel-button .btn-travel-details {
+  background-color: #FF9E53;
+  color: #FFFFFF;
+}
+
+.section-popular-content .section-popular-travel .card-travel .travel-button .btn-travel-details:hover {
+  opacity: 0.8;
+}
+
+.section-networks {
+  margin-top: -170px;
+  padding-top: 240px;
+  padding-bottom: 50px;
+}
+
+.section-networks h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+}
+
+.section-networks p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  margin-top: 14px;
+}
+
+.section-networks .img-partners {
+  max-width: 100%;
+  margin: 0 8px;
+}
+
+.section-testimonial-heading {
+  padding-top: 50px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f7f9ff));
+  background: linear-gradient(#fff 0%, #f7f9ff 100%);
+  min-height: 506px;
+}
+
+.section-testimonial-heading h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+}
+
+.section-testimonial-heading p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  margin-top: 14px;
+}
+
+.section-testimonial-content {
+  margin-top: -300px;
+  padding-bottom: 50px;
+}
+
+.section-testimonial-content .card-testimonial {
+  padding: 40px 20px 10px;
+  border-radius: 11px;
+}
+
+.section-testimonial-content .card-testimonial .testimonial-content {
+  min-height: 380px;
+}
+
+.section-testimonial-content .card-testimonial .testimonial-content img {
+  max-width: 120px;
+  max-height: 120px;
+}
+
+.section-testimonial-content .card-testimonial .testimonial-content h3 {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.section-testimonial-content .card-testimonial .testimonial-content .testimonial {
+  font-weight: 300;
+  font-size: 26px;
+  color: #6E6E6E;
+  min-height: 180px;
+}
+
+.section-testimonial-content .card-testimonial .testimonial-content .trip-to {
+  font-weight: 400;
+  font-size: 22px;
+  color: #6E6E6E;
+}
+
+.section-testimonial-content .card-testimonial .testimonial-content hr {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.section-testimonial-content .btn-help {
+  min-width: 170px;
+  background-color: #F2F2F2;
+  border: 1px solid #F2F2F2;
+  color: #6E6E6E;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.section-testimonial-content .btn-help:hover {
+  background-color: #F2F2F2;
+  border: 1px solid #6E6E6E;
+}
+
+.section-testimonial-content .btn-started {
+  min-width: 170px;
+  background-color: #FF9E53;
+  border: 1px solid #FF9E53;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.section-testimonial-content .btn-started:hover {
+  background-color: unset;
+  color: #FF9E53;
+}
+
+.section-footer h5 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.section-footer a {
+  font-size: 18px;
+  font-weight: 400;
+  color: #071C4D;
+  text-decoration: none;
+}
+
+.section-footer a:hover {
+  opacity: 0.8;
+}
+
+.section-footer .footer-text {
+  color: #6E6E6E;
+  font-size: 18px;
+  font-weight: 300;
+}
+
 @media screen and (max-width: 768px) {
   .container-mobile {
     padding-right: unset;
@@ -101,6 +308,15 @@ header .btn-started:hover {
     padding-right: 10px;
     padding-top: unset;
     padding-bottom: unset;
+  }
+  .section-stats .stats-detail {
+    padding-left: 20px;
+  }
+  .section-stats .stats-detail h2 {
+    font-size: 20px;
+  }
+  .section-stats .stats-detail span {
+    font-size: 10px;
   }
 }
 /*# sourceMappingURL=main.css.map */
